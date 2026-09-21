@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+		<style>
+		.effect{
+		text-shadow:1px 1px;
+		}
+		#colour{
+		text-shadow:1px 1px red;
+		}
+		#blur{
+		text-shadow:2px 2px 6px blue;
+		}
+		#h1{
+		color:white;
+		text-shadow:2px 2px 6px black;
+		}
+		#different{
+		color:blue;
+		text-shadow:2px 2px 8px yellow;
+		}
+		#multiple{
+		text-shadow:2px 2px 4px black,2px 2px 8px pink; 
+		}
+		#multiples{
+		text-shadow:2px 2px 4px pink,2px 2px 8px white,2px 2px 8px yellow; 
+		}
+		#border{
+		color:green;
+		text-shadow:-1px 0px black,0px 1px black, -1px 0px black, 0px 1px black; 
+		}
+		#pda{
+			width:100px;
+			border:solid;
+			white-space:nowrap;
+			overflow:hidden;
+			text-overflow:clip;
+			}
+			#dfa{
+			width:100px;
+			border:solid;
+			white-space:pre;
+			overflow:hidden;
+			text-overflow:clip;
+			}
+			#nfa{
+			border:solid;
+			word-wrap:break-word;
+			}
+			
+			#regular{
+			height:100px;
+			width:500px;
+			border:solid;
+			word-wrap:break-word;
+			}
+			
+			#reg{
+			height:100px;
+			width:100px;
+			border:solid;
+			word-wrap:break-word;
+			overflow:hidden;
+			}
+			#regs{
+			width:100px;
+			border:solid;
+			word-wrap:break-word;
+		
+			text-overflow:ellipsis;
+			}
+			#grammer{
+			width:300px;
+			border:dashed;
+			overflow:hidden;
+			white-space:nowrap;
+			text-overflow:ellipsis;
+			}
+			#grammers{
+			width:100px;
+			border:dashed;
+			overflow:hidden;
+			white-space:nowrap;
+
+			wordbreak:break-all;
+			}
+			#box{
+			box-shadow:10px 8px yellow;
+			padding:5px;
+			background-color:blue;
+			}
+			#boxs{
+			box-shadow:10px 8px 20px 18px black;
+			padding:5px;
+			background-color:maroon;
+			}
+			#boxsinset{
+			box-shadow:10px 8px 20px 10px black inset;
+			padding:5px;
+			background-color:maroon;
+			}
+		 </style>
+			<body>
+			<h1 class="effect">Shadow</h1>
+			<h1 class="effect" id="colour" >Shadow</h1>
+			<h1 class="effect" id="blur">Shadow</h1>
+			<h1 id="h1">Shadow</h1>
+			<h1 id="different">Shadow with different effect </h1>
+			<h1 id="multiple">Multiple Shadow</h1>
+			<h1 id="multiples">Multiple Shadow using three color</h1>
+			<h1 id="border">border around text</h1>
+			<h2>learn</h2>
+			<p>so how we write format for css text effect
+			p.test1 {
+			width:100px ; 
+			border: 1px solid blue;
+			white-space: nowrap; 
+			overflow: hidden;
+			text-overflow: clip;
+			}
+			
+			
+			so,
+			1.the width:it is box width
+			2.then next is border it is used for defining boder type 
+			3.white-space:like this how how you utilize white space
+				1.nowrap:add content to whitespace
+				2.normal:normal text is display
+				3.pre:properly arrange content
+			4.overflow:like how you mange content overflow like by hidingor by showing( visible)
+			5.text-overflow:clipped, display an ellipsis
+				1.clip:(default)display word if text is overflow indicating user for more text in content
+				2.ellipsis:display ellipse .......
+			( whatsapp uses this feature as read)
+			
+			6.wordbreak:1.break-all:if space end move to nextline no matter cuts the content
+								2.normal :move to next line ifif word does come in that line so move to next,
+								
+			</p>
+			<p> box-shadow: 10px 10px 50px 12px lightblue;
+			how box shadow works :
+			10px: horizontal
+			10px: vertical
+			50px: blur
+			12px: spread
+			</p>
+			
+			<p id="pda">A pushdown automaton is a way to implement a context-free grammar in a similar way we design DFA for a regular grammar.
+			A DFA can remember a finite amount of information,
+			but a PDA can remember an infinite amount of information.</p>
+			<p id="dfa">A pushdown automaton is a way to implement a context-free grammar in a similar way we design DFA for a regular grammar.
+			A DFA can remember a finite amount of information,
+			but a PDA can remember an infinite amount of information.</p>
+			<p id="nfa">A pushdown automaton is a way to implement a context-free grammar in a similar way we design DFA for a regular grammar.
+			A DFA can remember a finite amount of information,
+			but a PDA can remember an infinite amount of information.</p>
+			<p id="regular">A pushdown automaton is a way to implement a context-free grammar in a similar way we design DFA for a regular grammar.
+			A DFA can remember a finite amount of information,
+			but a PDA can remember an infinite amount of information.</p>
+			<p id="reg">A pushdown automaton is a way to implement a context-free grammar in a similar way we design DFA for a regular grammar.
+			A DFA can remember a finite amount of information,
+			but a PDA can remember an infinite amount of information.</p>
+			<p id="regs">A pushdown automaton is a way to implement a context-free grammar in a similar way we design DFA for a regular grammar.
+			A DFA can remember a finite amount of information,
+			but a PDA can remember an infinite amount of information.</p>
+			<p id="grammer">A pushdown automaton is a way to implement a context-free grammar in a similar way we design DFA for a regular grammar.
+			A DFA can remember a finite amount of information,
+			but a PDA can remember an infinite amount of information.</p>
+			<p id="grammers">A pushdown automaton is a way to implement a context-free grammar in a similar way we design DFA for a regular grammar.
+			A DFA can remember a finite amount of information,
+			but a PDA can remember an infinite amount of information.</p>
+			<p id="box">BOX shadow</p>
+			<p id="boxs">BOX shadow</p>
+			<p id="boxsinset">BOX shadow</p>
+			
+			</body>
+</html>
